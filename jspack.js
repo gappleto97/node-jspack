@@ -248,5 +248,3 @@ function JSPack()
 		return sum;
 	};
 };
-
-exports.jspack = new JSPack();
