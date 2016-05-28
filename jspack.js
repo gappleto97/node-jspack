@@ -247,4 +247,16 @@ function JSPack()
 		}
 		return sum;
 	};
+
+
 };
+
+if( typeof exports !== 'undefined' ) {
+	if( typeof module !== 'undefined' && module.exports ) {
+		exports = module.exports = new JSPack()
+	}
+	exports.JSPack = new JSPack()
+} 
+else {
+	root.JSPack = new JSPack()
+}
